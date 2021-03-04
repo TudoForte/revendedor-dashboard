@@ -161,6 +161,10 @@ strong {
   font-weight: 600;
 }
 
+.welcome {
+  padding-bottom: 20px;
+}
+
 .title-1 {
   /* text-transform: capitalize; */
   color: #031033;
@@ -169,7 +173,10 @@ strong {
 }
 
 .title-1 a {
-  color: #07c154;
+  padding: 0 15px;
+  background: #07c154;
+  border-radius: 5px;
+  color: #fff;
 }
 
 .title-1 a:hover {
@@ -5437,7 +5444,7 @@ section {
   }
 
   .title-1 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
