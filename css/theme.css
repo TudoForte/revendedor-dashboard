@@ -179,7 +179,8 @@ strong {
   transition: top .7s ease-in-out;
 }
 
-.full-menu.active {
+.full-menu.active,
+.full-menu.active .close-menu.closed {
   top: 0;
 
   transition: top .7s ease-in-out;
@@ -199,6 +200,16 @@ strong {
   font-size: 18px;
   color: #031033;
   font-weight: 700;
+
+  opacity: 0;
+
+  transition: opacity 1.5s ease-in-out;
+}
+
+.full-menu.active .menu-items a {
+  opacity: 1;
+
+  transition: opacity 1.5s ease-in-out;
 }
 
 .full-menu .menu-items a.out-link {
@@ -228,6 +239,59 @@ strong {
   width: 100%;
 
   transition: width .5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .full-menu {
+    justify-content: space-between;
+    padding: 50px 0 0;
+  }
+
+  .full-menu .logo-menu,
+  .full-menu .close-menu {
+    display: block;
+  }
+
+  .full-menu .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .full-menu .close-menu {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+
+    background: #07c154;
+  }
+
+  .full-menu .close-menu span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 430px) {
+  .full-menu {
+    padding-bottom: 75px;
+  }
+}
+
+@media (max-width: 385px) {
+  .full-menu .menu-items a {
+    padding: 2.5px;
+    margin: 5px 20px;
+
+    font-size: 14px;
+  }
 }
 
 
