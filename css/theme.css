@@ -156,6 +156,81 @@ strong {
 /*-----------------------------------------------------*/
 /*                   ELEMENTS                          */
 /*-----------------------------------------------------*/
+/* ----- Menu ----- */
+.full-menu {
+  position: fixed;
+  top: -100%;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 20px;
+
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(10px);
+
+  z-index: 100;
+
+  transition: top .7s ease-in-out;
+}
+
+.full-menu.active {
+  top: 0;
+
+  transition: top .7s ease-in-out;
+}
+
+.full-menu .logo-menu,
+.full-menu .close-menu {
+  display: none;
+}
+
+.full-menu .menu-items a {
+  position: relative;
+
+  padding: 20px;
+  margin: 0 40px;
+
+  font-size: 18px;
+  color: #031033;
+  font-weight: 700;
+}
+
+.full-menu .menu-items a.out-link {
+  color: #018939
+}
+
+.full-menu .menu-items a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 100%;
+
+  content: '';
+
+  background: rgba(7,193,84,1);
+  border-radius: 2px;
+
+  z-index: -1;
+
+  transition: width .5s ease-in-out;
+}
+
+.full-menu .menu-items a:hover::before {
+  width: 100%;
+
+  transition: width .5s ease-in-out;
+}
+
+
 /* ----- Title ----- */
 .title--sbold {
   font-weight: 600;
@@ -163,6 +238,93 @@ strong {
 
 .welcome {
   padding-bottom: 20px;
+}
+
+.menu-hamburguer {
+  display: flex;
+  align-items: center;
+
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+
+  cursor: pointer;
+}
+
+.menu-hamburguer span {
+  position: relative;
+
+  display: block;
+  width: 25px;
+  height: 2px;
+
+  background: #ccc;
+
+  transition: all .2s ease-in-out;
+}
+
+.menu-hamburguer span::before {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  right: 0;
+
+  content: '';
+
+  width: 25px;
+  height: 2px;
+
+  background: #ccc;
+
+  transition: all .2s ease-in-out;
+}
+
+.menu-hamburguer span::after {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+
+  content: '';
+
+  width: 25px;
+  height: 2px;
+
+  background: #ccc;
+
+  transition: all .2s ease-in-out;
+}
+
+.menu-hamburguer:hover span,
+.menu-hamburguer:hover span::before,
+.menu-hamburguer:hover span::after {
+  background: #07c154;
+
+  transition: all .2s ease-in-out;
+}
+
+.menu-hamburguer.active span {
+  background: #031033;
+
+  transform: rotateZ(45deg);
+
+  transition: transform .5s ease-in-out, background .5s ease-in-out;
+}
+
+.menu-hamburguer.active span::before {
+  opacity: 0;
+
+  transition: opacity .3s ease-in-out;
+}
+
+.menu-hamburguer.active span::after {
+  bottom: 0;
+
+  background: #031033;
+  
+  transform: rotateZ(90deg);
+
+  transition: transform .5s ease-in-out, background .5s ease-in-out;
 }
 
 .title-1 {

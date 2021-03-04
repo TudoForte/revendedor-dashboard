@@ -45,6 +45,25 @@
 
     <body class="animsition">
         <div class="page-wrapper">
+            <!-- Menu Tela Cheia -->
+            <nav class="full-menu" id="full-menu">
+                <div class="logo-menu">
+                    <a href="02 - inicial.html">
+                        <img class="logo" src="images/icon/logo-canalfy.png" alt="Logo Canalfy" />
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <a href="https://www.tudoforte.com.br/" target="_blank" class="out-link">Acessar Loja</a>
+                    <a href="02 - inicial.html">Painel</a>
+                    <a href="03 - orcamento.html">Orçamentos</a>
+                    <a href="04 - pedidos.html">Pedidos</a>
+                    <a href="06 - todas-comissoes.html">Comissões</a>
+                </div>
+                <div class="close-menu">
+                    <span>Fechar</span>
+                </div>
+            </nav>
+
             <!-- HEADER DESKTOP-->
             <header class="header-desktop3 d-none d-lg-block">
                 <div class="section__content section__content--p35">
@@ -128,6 +147,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="menu-hamburguer" id="toggle" onclick="menuToggle()">
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,6 +170,9 @@
             </header>
             <div class="sub-header-mobile-2 d-lg-none">
                 <div class="header__tool">
+                    <div class="menu-hamburguer" id="toggle" onclick="menuToggle()">
+                        <span></span>
+                    </div>
                     <div class="header-button-item has-noti js-item-menu">
                         <i class="zmdi zmdi-notifications"></i>
                         <div class="notifi-dropdown notifi-dropdown--no-bor js-dropdown">
@@ -528,6 +553,7 @@
 
         <!-- Main JS-->
         <script src="js/main.js"></script>
+        <script src="js/toggleMenu.js"></script>
 
     </body>
 
