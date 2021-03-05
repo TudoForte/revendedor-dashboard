@@ -7,10 +7,10 @@ var pedidosTotais = new Chart(ctx, {
             label: ['Total de Pedidos mês a mês'],
             data: [50, 42, 87, 124, 180, 156],
             backgroundColor: [
-                'rgba(7, 193, 84, 0.5)',
+                'rgba(3, 16, 51, 0.55)',
             ],
             borderColor: [
-                '#018939',
+                '#031033',
             ],
             borderWidth: 1
         }]
@@ -35,10 +35,10 @@ var pedidosAprovados = new Chart(ctx, {
             label: ['Pedidos aprovados mês a mês'],
             data: [50, 42, 87, 124, 180, 156],
             backgroundColor: [
-                'rgba(7, 193, 84, 0.5)',
+                'rgba(3, 16, 51, 0.55)',
             ],
             borderColor: [
-                '#018939',
+                '#031033',
             ],
             borderWidth: 1
         }]
