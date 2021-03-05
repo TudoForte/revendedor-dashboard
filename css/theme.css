@@ -952,6 +952,10 @@ section {
   background: transparent;
   border: 2px solid #031033;
   appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .btn-primary:hover {
@@ -959,6 +963,10 @@ section {
   border: 1px solid #031033;
   color: #fff;
   appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .btn-warning {
@@ -966,6 +974,10 @@ section {
   border: 1px solid #031033;
   color: #fff;
   appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .btn-warning:hover {
