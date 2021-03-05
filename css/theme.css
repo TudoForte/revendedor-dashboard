@@ -176,6 +176,15 @@ strong {
   }
 }
 
+@keyframes opacityLogo {
+  from {
+      opacity: .3;
+  }
+  to {
+      opacity: .9;
+  }
+}
+
 /* ----- Preloader ----- */
 .preloader {
   position: fixed;
@@ -193,7 +202,7 @@ strong {
 
   z-index: 9999;
 
-  animation: fadeLoader .5s .6s ease-in-out;
+  animation: fadeLoader .6s 2s ease-in-out;
 }
 
 .preloader::before {
@@ -209,7 +218,13 @@ strong {
 
   background: #07c154;
 
-  animation: progressLoader .5s ease-in-out;
+  animation: progressLoader 2s ease-in-out;
+}
+
+.preloader img {
+  opacity: 1;
+
+  animation: opacityLogo .5s ease-in-out infinite;
 }
 
 .loaded .preloader {
