@@ -954,8 +954,9 @@ section {
 }
 
 .btn-primary:hover {
-  background: #018939;
-  border: 1px solid #018939;
+  background: #031033;
+  border: 1px solid #031033;
+  color: #fff;
 }
 
 .btn-warning {
