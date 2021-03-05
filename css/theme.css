@@ -836,11 +836,21 @@ section {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-btn:hover {
   color: #fff;
   background: #3868cd;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-btn--blue2 {
@@ -855,6 +865,11 @@ section {
   display: block;
   width: 100%;
   text-align: center;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-btn-icon i {
@@ -864,15 +879,30 @@ section {
 
 .au-btn--blue {
   background: #4272d7;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-btn--green {
   background: #07c154;
   font-weight: 700;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-btn--green:hover {
   background: #018939;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-btn-plus {
@@ -1144,6 +1174,11 @@ section {
   -o-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-input--style2 {
@@ -1159,10 +1194,20 @@ section {
   -o-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-input--full {
   width: 100%;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
 }
 
 .au-input--h65 {
