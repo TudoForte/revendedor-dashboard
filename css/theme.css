@@ -951,18 +951,21 @@ section {
   font-weight: 700;
   background: transparent;
   border: 2px solid #031033;
+  appearance: none;
 }
 
 .btn-primary:hover {
   background: #031033;
   border: 1px solid #031033;
   color: #fff;
+  appearance: none;
 }
 
 .btn-warning {
   background: #031033;
   border: 1px solid #031033;
   color: #fff;
+  appearance: none;
 }
 
 .btn-warning:hover {
