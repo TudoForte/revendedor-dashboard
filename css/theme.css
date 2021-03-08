@@ -204,6 +204,10 @@ strong {
 
   background: rgba(255,255,255.5);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
 
   z-index: 9999;
 
@@ -239,7 +243,7 @@ strong {
 /* ----- Menu ----- */
 .full-menu {
   position: fixed;
-  top: -100%;
+  top: -500%;
   right: 0;
   left: 0;
 
@@ -253,6 +257,10 @@ strong {
 
   background: rgba(255,255,255,.7);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
 
   z-index: 100;
 
@@ -2245,6 +2253,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header-mobile img {
+  opacity: 1;
 }
 
 .header-mobile .hamburger {
