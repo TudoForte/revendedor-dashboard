@@ -96,6 +96,11 @@ p {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 
 /* ----- Typography ----- */
@@ -594,6 +599,14 @@ a:active {
   outline: none;
 }
 
+a[type='button'] {
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 a:hover,
 a {
   -webkit-transition: all 0.3s ease;
@@ -755,6 +768,17 @@ section {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+}
+
+.login-title {
+  margin-bottom: 20px;
+  
+  text-align: center;
+}
+
+.login-title h1 {
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .login-form .form-group label {
@@ -990,7 +1014,7 @@ section {
 
 .btn-primary:hover {
   background: #031033;
-  border: 1px solid #031033;
+  border: 2px solid #031033;
   color: #fff;
   appearance: none;
   -moz-appearance: none;
